@@ -22,8 +22,8 @@ $mail->Port = '465'; //porta
 $mail->SMTPDebug  = 0; //debug
 $mail->SMTPSecure = 'ssl'; 
 $mail->SMTPAuth = true; // Usa autenticação SMTP? (opcional)
-$mail->Username = 'limpservsite@gmail.com'; // Usuário do servidor SMTP
-$mail->Password = 'limpservLTDA'; // Senha do servidor SMTP
+$mail->Username = 'seuemail@gmail.com'; // Usuário do servidor SMTP
+$mail->Password = 'suasenha'; // Senha do servidor SMTP
 
 // Define o remetente
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -33,7 +33,7 @@ $mail->FromName = $email; // Seu nome
 
 // Define os destinatário(s)
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$mail->AddAddress('moises@concept.inf.br', 'LimpServ.');
+$mail->AddAddress('destinatario@qualqueremail', 'Nome do Destinatário');
 //$mail->AddCC('ciclano@site.net', 'Ciclano'); // Copia
 //$mail->AddBCC('fulano@dominio.com.br', 'Fulano da Silva'); // Cópia Oculta
 
@@ -44,7 +44,7 @@ $mail->IsHTML(true); // Define que o e-mail será enviado como HTML
 
 // Define a mensagem (Texto e Assunto)
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$mail->Subject  = "Contato LimpServ"; // Assunto da mensagem
+$mail->Subject  = "Assunto Email"; // Assunto da mensagem
 $mail->Body = $mensagem;
 //$mail->AltBody = "Este é o corpo da mensagem de teste, em Texto Plano! \r\n :) ";
 
